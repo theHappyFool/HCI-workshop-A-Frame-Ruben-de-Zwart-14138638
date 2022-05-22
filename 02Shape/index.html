@@ -9,7 +9,14 @@
   </head>
   <body>
     <a-scene background="color: black">
-	  <a-cylinder>
+	  <a-plane
+		src="#ground"
+		color="green"
+		height="100" 
+		width="100" 
+		rotation="-90 0 0"		
+	  </a-plane>
+	  <a-cylinder
 		color="blue"
 		height="3"
 		radius="1.5"
@@ -25,6 +32,13 @@
 		scale="1 1 2"
         shadow>
       </a-box>
+	  <!-- Pac-man. -->
+	  <a-cylinder 
+	    color="yellow" 
+		theta-start="50" 
+		theta-length="280" 
+		side="double">
+	  </a-cylinder>
     </a-scene>
   </body>
 </html>
